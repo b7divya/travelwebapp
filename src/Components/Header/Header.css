@@ -1,0 +1,356 @@
+/* 
+.header {
+    height: 13vh;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    overflow: visible; 
+}
+
+
+.header-container {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+
+.header-container-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    height: 50px;
+    width: auto;
+}
+
+
+.header-container-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.header-container-center-searchbar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+    padding: 3px 7px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-container-center-searchbar:hover {
+    box-shadow: 0 6px 8px rgba(255, 142, 49, 0.2); 
+}
+
+#searchbar {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
+#search {
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search:hover {
+    background-color: #e56c12;
+}
+
+
+.header-container-right {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+
+#login, #signup {
+    border: 2px solid #fd7e14;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fd7e14;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#login:hover, #signup:hover {
+    background-color: #fd7e14;
+    color: white;
+}
+
+
+.header-container-right-language {
+    position: relative; 
+}
+
+#language {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+#language:hover {
+    color: #fd7e14;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: calc(100% + 5px); 
+    left: 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 0;
+    margin: 0;
+    z-index: 9999; 
+    width: 150px;
+    max-height: 150px; 
+    overflow-y: auto;
+    display: block;
+}
+
+.language-dropdown li {
+    padding: 8px 15px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.language-dropdown li:hover {
+    background-color: #fd7e14;
+    color: #fff;
+}
+
+
+.header-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0));
+} */
+
+
+
+/* Header */
+.header {
+    height: 13vh;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Important for positioning dropdown */
+    overflow: visible; /* Ensure dropdown is not clipped */
+    width: 100vw; /* Background spans full width of the page */
+}
+
+/* Full Background */
+.header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100%;
+    background-color: whitesmoke; /* Background color */
+    z-index: -1; /* Behind header content */
+}
+
+/* Header Container (elements within 80vw) */
+.header-container {
+    width: 80vw; /* Container width is limited to 80vw */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+/* Logo */
+.header-container-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    height: 50px;
+    width: auto;
+}
+
+/* Search Bar */
+.header-container-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.header-container-center-searchbar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 30px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Adds a sleek shadow */
+    padding: 3px 7px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-container-center-searchbar:hover {
+    box-shadow: 0 6px 8px rgba(255, 142, 49, 0.2); /* Enhances shadow on hover */
+}
+
+#searchbar {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+}
+
+#searchbar:focus {
+    outline: none;
+}
+
+#search {
+    background-color: #fd7e14;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search:hover {
+    background-color: #e56c12;
+}
+
+/* Right Section */
+.header-container-right {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduced space between buttons */
+}
+
+/* Login and Signup Buttons */
+#login, #signup {
+    border: 2px solid #fd7e14;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fd7e14;
+    background-color: white;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#login:hover, #signup:hover {
+    background-color: #fd7e14;
+    color: white;
+}
+
+/* Language Dropdown */
+.header-container-right-language {
+    position: relative; /* Key for dropdown positioning */
+}
+
+#language {
+    background-color: transparent;
+    border: none;
+    color: #333;
+    font-size: 1.2rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: color 0.3s ease;
+}
+
+#language:hover {
+    color: #fd7e14;
+}
+
+.language-dropdown {
+    position: absolute;
+    top: calc(100% + 5px); /* Position below the language button */
+    left: 0;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 0;
+    margin: 0;
+    z-index: 9999; /* Ensure it appears above all other elements */
+    width: 150px;
+    max-height: 150px; /* Restrict height */
+    overflow-y: auto; /* Enable scrolling if needed */
+    display: block;
+}
+
+.language-dropdown li {
+    padding: 8px 15px;
+    cursor: pointer;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+.language-dropdown li:hover {
+    background-color: #fd7e14;
+    color: #fff;
+}
+
+/* Divider Line */
+.header-line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(255, 255, 255, 0));
+}
