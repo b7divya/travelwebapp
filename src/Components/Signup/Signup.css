@@ -1,0 +1,143 @@
+/* Overall Page Styling */
+.signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f4f8; /* Light background for a clean look */
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.signup-container {
+  background-color: #ffffff; /* Card background */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft shadow for depth */
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Header Section */
+.signup-container-heading h2 {
+  color: #333333;
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.signup-container-heading p {
+  font-size: 1rem;
+  color: #6c757d;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Toggle Buttons */
+.signup-container-toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.toggle-button {
+  flex: 1;
+  padding: 0.8rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: #6c757d;
+  border-bottom: 3px solid transparent;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.toggle-button.active {
+  color: #fd7e14; /* Accent color for active state */
+  border-bottom: 3px solid #fd7e14;
+}
+
+/* Form Section */
+.signup-container-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  width: 100%;
+  padding: 0.85rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-field:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 6px rgba(0, 123, 255, 0.4);
+  outline: none;
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 0.9rem;
+  background-color: #007bff;
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Guest Button */
+.guest-button {
+  margin-top: 1rem;
+  width: 100%;
+  padding: 0.85rem;
+  border: 2px solid #fd7e14;
+  color: #fd7e14;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 6px;
+  background: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.guest-button:hover {
+  background-color: #fd7e14;
+  color: #ffffff;
+}
+
+/* Error Message */
+.error-message {
+  margin-top: 1rem;
+  color: #dc3545; /* Red for error messages */
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 1.5rem;
+  }
+
+  .toggle-button {
+    font-size: 0.9rem;
+  }
+
+  .submit-button,
+  .guest-button {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+}

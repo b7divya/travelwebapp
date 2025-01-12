@@ -1,0 +1,100 @@
+/* Parent Container */
+.review {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f4f4f4; /* Light background color */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* Header Section */
+.review > .Header {
+    width: 100%; /* Ensure header spans the full width */
+    margin-bottom: 20px; /* Add space below the header */
+}
+
+/* Review Container */
+.review-container {
+    width: 100%;
+    max-width: 400px; /* Set a maximum width */
+    background: #ffffff; /* White background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 25px;
+    text-align: center;
+    margin: auto; /* Center the review-container vertically */
+}
+
+/* Header Inside Review Container */
+.review-container-header h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333333; /* Dark text color */
+    border-bottom: 2px solid #007bff; /* Accent color underline */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Input Field */
+.review-input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-input:focus {
+    border-color: #007bff; /* Blue focus border */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Subtle glow */
+}
+
+/* Submit Button */
+.submit-button {
+    background-color: #007bff; /* Primary blue color */
+    color: #ffffff; /* White text */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.03); /* Slight enlargement */
+}
+
+.submit-button:active {
+    background-color: #003f7f; /* Even darker blue on click */
+    transform: scale(1); /* Reset size */
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+    .review-container {
+        padding: 15px;
+    }
+
+    .review-container-header h1 {
+        font-size: 20px;
+    }
+
+    .review-input {
+        font-size: 14px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}

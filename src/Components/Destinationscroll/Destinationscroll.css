@@ -14,7 +14,7 @@
   position: relative;
   width: 80vw; /* Carousel width restricted to 80vw */
   margin: 0 auto;
-  overflow: hidden;
+  overflow: visible; /* Allow buttons to be outside the container */
   background-color: white; /* White background inside carousel */
   border-radius: 10px;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
@@ -102,9 +102,9 @@
 }
 
 .scroll-button.left {
-  left: 15px;
+  left: -40px; /* Moved farther left */
 }
 
 .scroll-button.right {
-  right: 15px;
+  right: -40px; /* Moved farther right */
 }

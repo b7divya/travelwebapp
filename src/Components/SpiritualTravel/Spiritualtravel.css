@@ -1,25 +1,26 @@
-/* General styles for the Featured Blogs section */
-.featuredblogs {
+/* General styles for the Spiritual Travel section */
+.spiritualtravel {
     background-color: #f9f9f9;
     padding: 80px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  }
-  
-  .featuredblogs-container {
+}
+
+.spiritualtravel-container {
     max-width: 1200px;
     width: 100%;
     padding: 0 20px;
     text-align: center;
-  }
-  
-  .featuredblogs-container-heading {
+}
+
+.spiritualtravel-container-heading {
     margin-bottom: 60px;
-  }
-  
-  .featuredblogs-container-heading h1 {
+    position: relative;
+}
+
+.spiritualtravel-container-heading h1 {
     font-size: 2.2rem;
     font-weight: 700;
     color: #333;
@@ -27,9 +28,9 @@
     letter-spacing: 1px;
     margin-bottom: 20px;
     position: relative;
-  }
-  
-  .featuredblogs-container-heading h1::after {
+}
+
+.spiritualtravel-container-heading h1::after {
     content: '';
     position: absolute;
     width: 80px;
@@ -38,18 +39,18 @@
     bottom: -12px;
     left: 50%;
     transform: translateX(-50%);
-  }
-  
-  /* Container for the blog cards */
-  .featuredblogs-container-blogs {
+}
+
+/* Container for the destination cards */
+.spiritualtravel-container-cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 40px;
     justify-items: center;
     margin-top: 30px;
-  }
-  
-  .blog-card {
+}
+
+.destination-card {
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -59,60 +60,47 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
     position: relative;
     opacity: 0.95;
-  }
-  
-  .blog-card:hover {
+}
+
+.destination-card:hover {
     transform: translateY(-15px);
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
     opacity: 1;
-  }
-  
-  .blog-image {
+}
+
+.destination-image {
     width: 100%;
     height: 250px;
     object-fit: cover;
     transition: transform 0.3s ease;
-  }
-  
-  .blog-card:hover .blog-image {
+}
+
+.destination-card:hover .destination-image {
     transform: scale(1.1);
-  }
-  
-  .blog-info {
+}
+
+.destination-info {
     padding: 25px 30px;
     background-color: #fff;
     z-index: 2;
     position: relative;
-  }
-  
-  .blog-title {
+}
+
+.destination-title {
     font-size: 2rem;
     font-weight: 600;
     color: #333;
     margin-top: 15px;
     letter-spacing: 0.5px;
     transition: color 0.3s ease;
-  }
-  
-  .blog-description {
-    font-size: 1rem;
-    font-weight: 400;
-    color: #777;
-    margin-top: 10px;
-    line-height: 1.5;
-    transition: color 0.3s ease;
-  }
-  
-  .blog-card:hover .blog-title {
+}
+
+.destination-card:hover .destination-title {
     color: #fd7e14;
-  }
-  
-  .blog-card:hover .blog-description {
-    color: #555;
-  }
-  
-  /* Add a subtle gradient overlay effect */
-  .blog-card::before {
+}
+
+/* Add a subtle gradient overlay effect */
+.destination-card::before {
     content: '';
     position: absolute;
     top: 0;
@@ -121,22 +109,21 @@
     bottom: 0;
     background: linear-gradient(to top, rgba(0, 0, 0, 0.3), transparent);
     z-index: 1;
-  }
-  
-  .blog-card:hover::before {
+}
+
+.destination-card:hover::before {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
-  }
-  
-  /* Responsive Design for smaller screens */
-  @media (max-width: 1024px) {
-    .featuredblogs-container-blogs {
-      grid-template-columns: repeat(2, 1fr);
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 1024px) {
+    .spiritualtravel-container-cards {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
     }
-  }
-  
-  @media (max-width: 768px) {
-    .featuredblogs-container-blogs {
-      grid-template-columns: 1fr;
+}
+
+@media (max-width: 768px) {
+    .spiritualtravel-container-cards {
+        grid-template-columns: 1fr; /* 1 column for smaller screens */
     }
-  }
-  
+}

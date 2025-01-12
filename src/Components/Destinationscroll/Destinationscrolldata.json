@@ -1,0 +1,68 @@
+[
+ 
+  {
+    "image": "Delhi.png",
+    "name": "Delhi",
+    "alt": "Delhi, India Travel"
+  },
+  {
+    "image": "Goa.png",
+    "name": "Goa",
+    "alt": "Goa, India"
+  },
+  {
+    "image": "Gujrat.png",
+    "name": "Gujrat",
+    "alt": "Gujrat, India"
+  },
+  {
+    "image": "Kerala.png",
+    "name": "Kerala",
+    "alt": "Kerala, India"
+  },
+  {
+    "image": "Ladakh.png",
+    "name": "Ladakh",
+    "alt": "Ladakh, India"
+  },
+  {
+    "image": "Goa.png",
+    "name": "Goa",
+    "alt": "Goa, India"
+  },
+  {
+    "image": "Maharastra.png",
+    "name": "Maharastra",
+    "alt": "Maharastra, India"
+  },
+  {
+    "image": "Odisha.png",
+    "name": "Odisha",
+    "alt": "Odisha, India"
+  },
+  {
+    "image": "Rajasthan.png",
+    "name": "Rajasthan",
+    "alt": "Rajasthan, India"
+  },
+  {
+    "image": "Sikkim.png",
+    "name": "Sikkim",
+    "alt": "Sikkim, India"
+  },
+  {
+    "image": "Tn.png",
+    "name": "TamilNadu",
+    "alt": "Tamil Nadu, India"
+  },
+  {
+    "image": "Up.png",
+    "name": "Up",
+    "alt": "Uttarpradesh, India"
+  },
+  {
+    "image": "Uttrakhand.png",
+    "name": "Uttrakhand",
+    "alt": "Uttrakhand, India"
+  }
+]

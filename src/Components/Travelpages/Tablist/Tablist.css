@@ -1,0 +1,71 @@
+/* .react-tabs__tab--selected {
+    background: #ff7e67;
+    color: white;
+  }
+  .react-tabs__tab {
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+  }
+  .react-tabs__tab:focus {
+    outline: none;
+    border: 1px solid #ff7e67;
+  }
+   */
+
+
+
+   /* Container for the entire tab list */
+.react-tabs__tab-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Spacing between tabs */
+    margin: 20px 0;
+    padding: 0;
+    list-style: none; /* Remove default bullet points */
+  }
+  
+  /* Individual tabs */
+  .react-tabs__tab {
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+  }
+  
+  /* Hover effect for tabs */
+  .react-tabs__tab:hover {
+    background: #ffefe9;
+    color: #ff7e67;
+    border-color: #ff7e67;
+  }
+  
+  /* Selected tab */
+  .react-tabs__tab--selected {
+    background: #ff7e67;
+    color: white;
+    border-color: #ff7e67;
+    box-shadow: 0 4px 8px rgba(255, 126, 103, 0.4);
+  }
+  
+  /* Focused tab for accessibility */
+  .react-tabs__tab:focus {
+    outline: none;
+    border: 2px solid #ff7e67;
+  }
+  
+  /* Add animation for smoother transitions */
+  .react-tabs__tab {
+    transition: transform 0.2s ease, background 0.3s ease, color 0.3s ease;
+  }
+  
+  .react-tabs__tab:active {
+    transform: scale(0.95); /* Slight shrink effect on click */
+  }
+  
